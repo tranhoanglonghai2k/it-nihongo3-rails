@@ -11,7 +11,7 @@
 
   <body>
       <% if user_signed_in? %>
-          <p>ZIC5D, <%= current_user.email %></p>
+          <p>こんにちわ, <%= current_user.email %></p>
                <%= link_to "ログアウト" , destroy_user_session_path, methad: :delete %>
           <% else %>
                <%= link_to "サインイン", new_user_session_path %>
